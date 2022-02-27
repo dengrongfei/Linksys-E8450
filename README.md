@@ -9,12 +9,7 @@
 4.用WinSCP上传mtd 4个文件以及FW_RT3200_1.0.01.101415_prod.img镜像到/tmp 目录中
 执行
 
-ubidetach -d 0
-insmod mtd-rw i_want_a_brick=1
-mtd write /tmp/mtd0 /dev/mtd0
-mtd write /tmp/mtd1 /dev/mtd1
-mtd write /tmp/mtd2 /dev/mtd2
-mtd write /tmp/mtd3 /dev/mtd3
+过程放在上面的文件夹了
 
 注意ssh是否有无提示报错，如果有，请恢复系统，重新按照步骤再试（会出现在mtd0-2的命令，以及提示没有mtd-rw这个模块）
 之后
@@ -37,12 +32,7 @@ Steps to flash back to the original factory: (install xshell and WinSCP first)
 4. Use WinSCP to upload mtd total 4 files and FW_RT3200_1.0.01.101415_prod.img image to /tmp directory
 run command
 
-ubidetach -d 0
-insmod mtd-rw i_want_a_brick=1
-mtd write /tmp/mtd0 /dev/mtd0
-mtd write /tmp/mtd1 /dev/mtd1
-mtd write /tmp/mtd2 /dev/mtd2
-mtd write /tmp/mtd3 /dev/mtd3
+placed in the above folder
 
 Pay attention to whether ssh reports an error or not. If so, please restore the system and follow the steps to try again (the command that will appear in mtd0-2, and the prompt that there is no mtd-rw module)
 after
